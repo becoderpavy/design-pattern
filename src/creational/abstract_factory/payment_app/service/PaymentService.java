@@ -13,7 +13,7 @@ public class PaymentService {
 	}
 
 	public void doPayment(Double amt) {
-		Payment type = paymentFactory.initPaymentType();
+		Payment type = paymentFactory.createPayment();
 		type.pay(amt);
 	}
 

@@ -6,7 +6,7 @@ import creational.abstract_factory.payment_app.type.Payment;
 public class CreditCardPaymentFactory implements PaymentFactory {
 
 	@Override
-	public Payment initPaymentType() {
+	public Payment createPayment() {
 		return new CreditCardPayment();
 	}
 
